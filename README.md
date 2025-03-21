@@ -92,6 +92,4 @@ There are no known issues currently.
 
 ## Release Notes
 
-### 1.0.0
-
-Initial release of email-headers-highlight extension.
+See [CHANGELOG.MD](CHANGELOG.md)
