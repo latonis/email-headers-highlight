@@ -25,9 +25,20 @@
 		},
 		{
 			"include": "#windows-machine-name"
+		},
+		{
+			"include": "#datetime"
 		}
 	],
 	"repository": {
+		"datetime": {
+			"patterns": [
+				{
+					"name": "entity.name.datetime",
+					"match": "\\b(?:(?:(?:[ \\t]*)?(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)(?:[ \\t]*)?,)?(?:[ \\t]*)?(?:(?:0?[1-9]|[12][0-9]|3[01])(?:[ \\t]*))?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)(?:[ \\t]*)(?:(?:[ \\t]*)[0-9]{4}(?:[ \\t]*)))(?:[ \\t]*)(?:(?:[01][0-9]|2[0-3]):[0-5][0-9](?::[0-5][0-9])?)(?:[ \\t]*)(?:(?:[+-][0-9]{4}))(?:[ \\t]*)?\\b"
+				}
+			]
+		},
 		"windows-machine-name": {
 			"patterns": [
 				{
