@@ -15,7 +15,7 @@ The extension highlights the syntax of email headers in .eml files and plaintext
 
 There will be more added with time :)
 
-![email-headers-highlight](./images/example.png)
+![email-headers-highlight](https://github.com/user-attachments/assets/f2c2eeff-3f9f-4bf3-8b71-866bc5afac6b)
 
 ## Requirements
 
