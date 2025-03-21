@@ -41,10 +41,17 @@
       "editor.tokenColorCustomizations": {
         "textMateRules": [
           {
+            "name": "Datetime",
+            "scope": "entity.name.datetime",
+            "settings": {
+              "foreground": "#ceaade"
+            }
+          },
+          {
             "name": "Windows Machine Name",
             "scope": "entity.name.windows.machinename",
             "settings": {
-              "foreground": "#c02fcd"
+              "foreground": "#c2d95c"
             }
           },
           {
