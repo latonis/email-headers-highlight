@@ -18,10 +18,21 @@
 			"include": "#keyvalue"
 		},
 		{
+			"include": "#email-header-pass"
+		},
+		{
 			"include": "#email-header-fail"
 		}
 	],
 	"repository": {
+		"email-header-pass": {
+			"patterns": [
+				{
+					"name": "entity.name.emailsec.pass",
+					"match": "(?i)\\b(dmarc|spf|dkim)=pass\\b"
+				}
+			]
+		},
 		"email-header-fail": {
 			"patterns": [
 				{

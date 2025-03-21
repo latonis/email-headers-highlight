@@ -51,6 +51,14 @@
             }
         },
         {
+            "name": "Email Security Pass",
+            "scope": "entity.name.emailsec.pass",
+            "settings": {
+                "foreground": "#80EF80",
+                "fontStyle": "bold"
+            }
+        },
+        {
             "name": "Email Security Fail",
             "scope": "entity.name.emailsec.fail",
             "settings": {
