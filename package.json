@@ -41,6 +41,13 @@
       "editor.tokenColorCustomizations": {
         "textMateRules": [
           {
+            "name": "Windows Machine Name",
+            "scope": "entity.name.windows.machinename",
+            "settings": {
+              "foreground": "#c02fcd"
+            }
+          },
+          {
             "name": "IP Address",
             "scope": "entity.name.ip.address",
             "settings": {
