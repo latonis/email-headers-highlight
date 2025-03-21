@@ -8,7 +8,7 @@
   },
   "displayName": "Email Headers Highlighting",
   "description": "This language extension serves as a syntax highlighter that enables quicker analysis of email headers",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.98.0"
   },
@@ -40,6 +40,13 @@
     "configurationDefaults": {
       "editor.tokenColorCustomizations": {
         "textMateRules": [
+          {
+            "name": "Windows Machine Name",
+            "scope": "entity.name.windows.machinename",
+            "settings": {
+              "foreground": "#c02fcd"
+            }
+          },
           {
             "name": "IP Address",
             "scope": "entity.name.ip.address",

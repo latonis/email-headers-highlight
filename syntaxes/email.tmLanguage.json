@@ -22,9 +22,20 @@
 		},
 		{
 			"include": "#email-header-fail"
+		},
+		{
+			"include": "#windows-machine-name"
 		}
 	],
 	"repository": {
+		"windows-machine-name": {
+			"patterns": [
+				{
+					"name": "entity.name.windows.machinename",
+					"match": "(?i)\\b(DESKTOP|WIN)\\-[A-Z0-9]{3,12}\\b"
+				}
+			]
+		},
 		"email-header-pass": {
 			"patterns": [
 				{
