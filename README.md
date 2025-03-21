@@ -1,65 +1,97 @@
-# email-headers-highlight README
+# email-headers-highlight
 
-This is the README for your extension "email-header-highlight". After writing up a brief description, we recommend including the following sections.
+This extension allows for highlighting the syntax of email headers in .eml files and plaintext. It is a custom syntax highlighting extension for Visual Studio Code written with tmlanguage grammar.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+The extension highlights the syntax of email headers in .eml files and plaintext. It also highlights the following for easy readability and quicker analysis:
 
-For example if there is an image subfolder under your extension project workspace:
+- ip addresses
+- domains
+- email addresses
+- DMARC results
+- DKIM results
+- SPF results
 
-\!\[feature X\]\(images/feature-x.png\)
+There will be more added with time :)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![email-headers-highlight](./images/example.png)
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+There are no external requirements or dependencies for this extension.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+The extension will work with both light and dark themes.
 
-For example:
+All of the color settings can be customized in the VS Code settings. The following is an example if you wish to change the default color settings:
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+```json
+{
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "entity.name.ip.address",
+        "settings": {
+          "foreground": "#FF0000"
+        }
+      },
+      {
+        "scope": "entity.name.email.address",
+        "settings": {
+          "foreground": "#00FF00",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "variable.other.readwrite.variablecolon",
+        "settings": {
+          "foreground": "#0000FF",
+          "fontStyle": "bold underline"
+        }
+      },
+      {
+        "scope": "entity.name.emailsec.pass",
+        "settings": {
+          "foreground": "#008B8B"
+        }
+      },
+      {
+        "scope": "entity.name.emailsec.fail",
+        "settings": {
+          "foreground": "#B22222"
+        }
+      },
+      {
+        "scope": "string.quoted.double.email",
+        "settings": {
+          "foreground": "#A31515"
+        }
+      },
+      {
+        "scope": "constant.character.escape.email",
+        "settings": {
+          "foreground": "#B5CEA8"
+        }
+      },
+      {
+        "scope": "entity.name.domain.address",
+        "settings": {
+          "foreground": "#A31515"
+        }
+      }
+    ]
+  }
+}
+```
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+There are no known issues currently.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release of email-headers-highlight extension.
