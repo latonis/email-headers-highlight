@@ -3,6 +3,9 @@
 	"name": "Email Headers",
 	"patterns": [
 		{
+			"include": "#ipaddress"
+		},
+		{
 			"include": "#emailaddress"
 		},
 		{
@@ -13,9 +16,6 @@
 		},
 		{
 			"include": "#keyvalue"
-		},
-		{
-			"include": "#ipaddress"
 		},
 		{
 			"include": "#email-header-fail"
@@ -34,7 +34,7 @@
 			"patterns": [
 				{
 					"name": "entity.name.domain.address",
-					"match": "\\b(?:[a-z0-9_](?:[a-z0-9_-]{0,63}[a-z0-9_])?\\.)+[a-z0-9_](?:[a-z0-9_-]{0,63}[a-z0-9_])?\\b"
+					"match": "\\b(?:[a-z0-9_](?:[a-z0-9_-]{0,63}[a-z0-9_])?\\.)+(?!\\d+\\.\\d+\\.\\d+\\.\\d+\\b)[a-z]{2,}\\b"
 				}
 			]
 		},

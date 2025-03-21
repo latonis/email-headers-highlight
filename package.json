@@ -30,6 +30,18 @@
         "scopeName": "source.email-header",
         "path": "./syntaxes/email.tmLanguage.json"
       }
+    ],
+    "themes": [
+      {
+        "label": "Email Header Analysis Theme - Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/email_analysis_dark.json"
+      },
+      {
+        "label": "Email Header Analysis Theme - Light",
+        "uiTheme": "vs",
+        "path": "./themes/email_analysis_light.json"
+      }
     ]
   }
 }
