@@ -1,0 +1,35 @@
+{
+  "name": "email-headers-highlight",
+  "author": "Jacob Latonis",
+  "displayName": "email-headers-highlight",
+  "description": "This language extension serves as a syntax highlighter that enables quicker analysis of email headers",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "email",
+        "aliases": [
+          "Email Headers",
+          "email"
+        ],
+        "extensions": [
+          ".eml"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "email",
+        "scopeName": "source.email-header",
+        "path": "./syntaxes/email.tmLanguage.json"
+      }
+    ]
+  }
+}

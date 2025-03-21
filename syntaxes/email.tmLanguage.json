@@ -1,0 +1,83 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Email Headers",
+	"patterns": [
+		{
+			"include": "#emailaddress"
+		},
+		{
+			"include": "#domain"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#keyvalue"
+		},
+		{
+			"include": "#ipaddress"
+		},
+		{
+			"include": "#email-header-fail"
+		}
+	],
+	"repository": {
+		"email-header-fail": {
+			"patterns": [
+				{
+					"name": "entity.name.emailsec.fail",
+					"match": "(?i)\\b(dmarc|spf|dkim)=fail\\b"
+				}
+			]
+		},
+		"domain": {
+			"patterns": [
+				{
+					"name": "entity.name.domain.address",
+					"match": "\\b(?:[a-z0-9_](?:[a-z0-9_-]{0,63}[a-z0-9_])?\\.)+[a-z0-9_](?:[a-z0-9_-]{0,63}[a-z0-9_])?\\b"
+				}
+			]
+		},
+		"emailaddress": {
+			"patterns": [
+				{
+					"name": "entity.name.email.address",
+					"match": "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b"
+				}
+			]
+		},
+		"ipaddress": {
+			"patterns": [
+				{
+					"name": "entity.name.ip.address",
+					"match": "\\b(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)\\.(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)\\.(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)\\.(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)\\b"
+				}
+			]
+		},
+		"keyvalue": {
+			"patterns": [
+				{
+					"name": "variable.definition.variablecolon",
+					"match": "^([a-zA-Z_][a-zA-Z0-9_\\-]*):",
+					"captures": {
+						"1": {
+							"name": "variable.other.readwrite.variablecolon"
+						}
+					}
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.email",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.email",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.email-header"
+}
