@@ -1,6 +1,10 @@
 {
   "name": "email-headers-highlight",
   "author": "Jacob Latonis (jacoblatonis.me)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/latonis/email-headers-highlight.git"
+  },
   "displayName": "email-headers-highlight",
   "description": "This language extension serves as a syntax highlighter that enables quicker analysis of email headers",
   "version": "0.0.1",
