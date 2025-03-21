@@ -1,6 +1,6 @@
 {
   "name": "email-headers-highlight",
-  "author": "Jacob Latonis",
+  "author": "Jacob Latonis (jacoblatonis.me)",
   "displayName": "email-headers-highlight",
   "description": "This language extension serves as a syntax highlighter that enables quicker analysis of email headers",
   "version": "0.0.1",
