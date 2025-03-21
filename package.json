@@ -1,6 +1,7 @@
 {
   "name": "email-headers-highlight",
   "author": "Jacob Latonis (jacoblatonis.me)",
+  "publisher": "jacoblatonis",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/latonis/email-headers-highlight.git"
