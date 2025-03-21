@@ -83,6 +83,13 @@
             }
           },
           {
+            "name": "X-Key Value Key",
+            "scope": "variable.other.readwrite.variablecolon-x",
+            "settings": {
+              "foreground": "#9cfec3"
+            }
+          },
+          {
             "name": "Pass Keywords",
             "scope": "entity.name.emailsec.pass",
             "settings": {
