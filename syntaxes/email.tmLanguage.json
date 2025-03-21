@@ -15,6 +15,9 @@
 			"include": "#strings"
 		},
 		{
+			"include": "#x-keyvalue"
+		},
+		{
 			"include": "#keyvalue"
 		},
 		{
@@ -95,6 +98,19 @@
 					"captures": {
 						"1": {
 							"name": "variable.other.readwrite.variablecolon"
+						}
+					}
+				}
+			]
+		},
+		"x-keyvalue": {
+			"patterns": [
+				{
+					"name": "variable.definition.variablecolon",
+					"match": "^(X\\-[a-zA-Z_][a-zA-Z0-9_\\-]*):",
+					"captures": {
+						"1": {
+							"name": "variable.other.readwrite.variablecolon-x"
 						}
 					}
 				}
