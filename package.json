@@ -90,7 +90,7 @@
             }
           },
           {
-            "name": "Pass Keywords",
+            "name": "Authentication Methods Keywords - Pass",
             "scope": "entity.name.emailsec.pass",
             "settings": {
               "foreground": "#4EC9B0",
@@ -98,10 +98,18 @@
             }
           },
           {
-            "name": "Fail Keywords",
+            "name": "Authentication Methods Keywords - Fail",
             "scope": "entity.name.emailsec.fail",
             "settings": {
               "foreground": "#F44747",
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "name": "Authentication Methods Keywords - None",
+            "scope": "entity.name.emailsec.none",
+            "settings": {
+              "foreground": "#eaff00",
               "fontStyle": "bold"
             }
           },
