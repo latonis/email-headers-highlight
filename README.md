@@ -6,14 +6,14 @@ This extension allows for highlighting the syntax of email headers in .eml files
 
 The extension highlights the syntax of email headers in .eml files and plaintext. It also highlights the following for easy readability and quicker analysis:
 
-- ip addresses
-- domains
-- email addresses
 - DMARC results
 - DKIM results
 - SPF results
-
-There will be more added with time :)
+- ip addresses
+- domains
+- email addresses
+- timestamps
+- ... and more
 
 ![email-headers-highlight](./images/example.png)
 
@@ -25,7 +25,7 @@ There are no external requirements or dependencies for this extension.
 
 The extension will work with both light and dark themes.
 
-All of the color settings can be customized in the VS Code settings. The following is an example if you wish to change the default color settings:
+All of the color settings can be customized in VS Code settings. The following is an example if you wish to change the default color settings:
 
 ```json
 {
