@@ -21,10 +21,13 @@
 			"include": "#keyvalue"
 		},
 		{
-			"include": "#email-header-pass"
+			"include": "#email-authentication-pass"
 		},
 		{
-			"include": "#email-header-fail"
+			"include": "#email-authentication-fail"
+		},
+		{
+			"include": "#email-authentication-none"
 		},
 		{
 			"include": "#windows-machine-name"
@@ -50,7 +53,7 @@
 				}
 			]
 		},
-		"email-header-pass": {
+		"email-authentication-pass": {
 			"patterns": [
 				{
 					"name": "entity.name.emailsec.pass",
@@ -58,11 +61,19 @@
 				}
 			]
 		},
-		"email-header-fail": {
+		"email-authentication-fail": {
 			"patterns": [
 				{
 					"name": "entity.name.emailsec.fail",
 					"match": "(?i)\\b(dmarc|spf|dkim)=fail\\b"
+				}
+			]
+		},
+		"email-authentication-none": {
+			"patterns": [
+				{
+					"name": "entity.name.emailsec.none",
+					"match": "(?i)\\b(dmarc|spf|dkim)=none\\b"
 				}
 			]
 		},
