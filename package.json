@@ -106,6 +106,14 @@
             }
           },
           {
+            "name": "Authentication Methods Keywords - Temporary Error",
+            "scope": "entity.name.emailsec.temperror",
+            "settings": {
+              "foreground": "#e89c10",
+              "fontStyle": "bold"
+            }
+          },
+          {
             "name": "Authentication Methods Keywords - None",
             "scope": "entity.name.emailsec.none",
             "settings": {
