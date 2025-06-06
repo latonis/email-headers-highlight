@@ -1,0 +1,29 @@
+name: Publish Extension to VS Code Marketplace
+on:
+  release:
+    types: [published]
+jobs:
+    publish:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+            
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                node-version: '18'
+                
+            - name: Install dependencies
+              run: npm install -g @vscode/vsce
+
+            - name: Package extension
+              run: vsce package
+            
+            - name: Publish extension
+              run: vsce publish
+              env:
+                VSCE_PAT: ${{ secrets.VSCE_PAT }}
+            
+            - name: Clean up
+              run: rm -rf *.vsix
