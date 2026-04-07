@@ -135,7 +135,106 @@
               "foreground": "#D7BA7D"
             }
           }
-        ]
+        ],
+        "[*Light*]": {
+          "textMateRules": [
+            {
+              "name": "Datetime",
+              "scope": "entity.name.datetime",
+              "settings": {
+                "foreground": "#825096"
+              }
+            },
+            {
+              "name": "Windows Machine Name",
+              "scope": "entity.name.windows.machinename",
+              "settings": {
+                "foreground": "#4d6b00"
+              }
+            },
+            {
+              "name": "IP Address",
+              "scope": "entity.name.ip.address",
+              "settings": {
+                "foreground": "#387021"
+              }
+            },
+            {
+              "name": "Email Address",
+              "scope": "entity.name.email.address",
+              "settings": {
+                "foreground": "#0056a3"
+              }
+            },
+            {
+              "name": "Domain",
+              "scope": "entity.name.domain.address",
+              "settings": {
+                "foreground": "#a64118"
+              }
+            },
+            {
+              "name": "Key Value Key",
+              "scope": "variable.other.readwrite.variablecolon",
+              "settings": {
+                "foreground": "#006699"
+              }
+            },
+            {
+              "name": "X-Key Value Key",
+              "scope": "variable.other.readwrite.variablecolon-x",
+              "settings": {
+                "foreground": "#007a3d"
+              }
+            },
+            {
+              "name": "Authentication Methods Keywords - Pass",
+              "scope": "entity.name.emailsec.pass",
+              "settings": {
+                "foreground": "#008569",
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "name": "Authentication Methods Keywords - Fail",
+              "scope": "entity.name.emailsec.fail",
+              "settings": {
+                "foreground": "#b52020",
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "name": "Authentication Methods Keywords - Temporary Error",
+              "scope": "entity.name.emailsec.temperror",
+              "settings": {
+                "foreground": "#9c6500",
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "name": "Authentication Methods Keywords - None",
+              "scope": "entity.name.emailsec.none",
+              "settings": {
+                "foreground": "#7a8500",
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "name": "Strings",
+              "scope": "string.quoted.double.email",
+              "settings": {
+                "foreground": "#a31515"
+              }
+            },
+            {
+              "name": "Escape Characters",
+              "scope": "constant.character.escape.email",
+              "settings": {
+                "foreground": "#8a6512"
+              }
+            }
+          ]
+        }
       }
     }
   }
