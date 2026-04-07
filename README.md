@@ -15,7 +15,13 @@ The extension highlights the syntax of email headers in .eml files and plaintext
 - timestamps
 - ... and more
 
-![email-headers-highlight](./images/example.png)
+### Light Mode Example
+
+![Light mode screenshot of headers](./images/light_mode.png)
+
+### Dark Mode Example
+
+![Light mode screenshot of headers](./images/dark_mode.png)
 
 ## Requirements
 
@@ -23,7 +29,7 @@ There are no external requirements or dependencies for this extension.
 
 ## Extension Settings
 
-The extension will work with both light and dark themes.
+The extension will work with both light and dark themes, with customizable settings for when your theme does not mesh well with the default colors chosen by the extension.
 
 All of the color settings can be customized in VS Code settings. The following is an example if you wish to change the default color settings:
 
